@@ -1,6 +1,6 @@
 import axios from "axios"
 
-const REPORT_API_BASE_URL = "http://localhost:8081/api/v1/report"
+const REPORT_API_BASE_URL = "https://campus-maintenance-system.herokuapp.com/api/v1/report"
 
 class ReportService{
     
