@@ -59,6 +59,7 @@ const AddReport = () => {
             name="faultName"
             value={report.faultName}
             onChange={(e)=> handleChange(e)}
+            required
             className='h-10 w-96 border bg-slate-100 mt-2 px-2'/>
         </div>
         <div className='items-center justify-center h-14 w-full my-4'>
@@ -68,6 +69,7 @@ const AddReport = () => {
             <textarea 
             type='text'
             name="description"
+            required
             value={report.description}
             onChange={(e)=> handleChange(e)}
             className='h-10 w-96 border bg-slate-100 mt-2 px-2'/>
@@ -80,18 +82,20 @@ const AddReport = () => {
              type='text'
              name="roomNo"
              value={report.roomNo}
+             required
              onChange={(e)=> handleChange(e)}
              className='h-10 w-96 border bg-slate-100 mt-2 px-2'/>
              </div>
         <div className='items-center justify-center h-14 w-full my-4'>
             <label className='block text-black text-sm font-normal'>
-                Date: 
+                 Date Occured: 
             </label>
             <input
              type='date' 
             name="dateOccured"
             value={report.dateOccured}
             onChange={(e)=> handleChange(e)}
+            required
             className='h-10 w-96 border bg-slate-100 mt-2 px-2'/>
         </div>
         <div className='items-center justify-center h-14 w-full my-4 space-x-4 pt-4'>
