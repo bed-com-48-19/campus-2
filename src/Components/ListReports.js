@@ -65,7 +65,7 @@ const ListReports = () => {
     <div className='p-5 h-screen bg-gray-100'>
         <h1 className='text-xl mb-2'></h1>
 
-        <div className='overflow-auto rounded-lg shadow hidden md:block'>
+        <div className='overflow-auto rounded-lg shadow '>
             <div className='container mx-auto my-4'>
        
             <div className='flex shadow border-b'>
