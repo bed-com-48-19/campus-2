@@ -42,7 +42,7 @@ export default function Login() {
                         title: "Good job!",
                         text: "Logged Successfully",
                         icon: "success",
-                        button: "Aww yiss!",
+                        button: "!",
                       });
                      navigate("/list")
                 }
