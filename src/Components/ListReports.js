@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
+import swal from 'sweetalert'
 
 const ListReports = () => {
 
@@ -19,6 +20,14 @@ const ListReports = () => {
         axios.delete(`https://campus-maintenance-system.herokuapp.com/api/v1/report/${id}`)
         .then(res => console.log('Deleted...', res))
         .catch(error => console.log(error));
+    }
+
+    const logOut=()=>{
+
+        localStorage.clear();
+        swal("Good job!", "Logout Successfully!", "success");
+        navigate("/")
+
     }
 
     const arry = reports.map((data, index) => {
@@ -86,7 +95,7 @@ const ListReports = () => {
        <br></br>
        <div className='h-12'>
            <button 
-           onClick={()=> navigate("/")}
+           onClick={() =>logOut()}
             className='rounded bg-gray-700 text-white px-6 py-2 font-semibold'>
                Logout
            </button>
